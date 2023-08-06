@@ -1,0 +1,85 @@
+.video_item {
+    display: flex;
+
+    .video_item_content {
+        width: 70%;
+
+        .videoitem {
+            .iframe_videoitem {
+                width: 100%;
+                height: 70vh;
+            }
+        }
+
+        .videoitem-detail {
+            margin-left: 25px;
+            padding-top: 5px;
+            font-family: "Roboto", "Arial", sans-serif;
+
+            .videoitem_title {
+                font-size: 18px;
+                font-weight: 500;
+            }
+
+            .videoitem_createdAt {
+                font-size: 13px;
+                font-weight: 400;
+                margin-top: 5px;
+            }
+
+            .videoitem_author {
+                margin-top: 20px;
+                font-size: 15px;
+                font-weight: 400;
+            }
+
+            .videoitem_description {
+                margin-top: 20px;
+                font-size: 13px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .video-list_right {
+        flex: 1;
+        padding-left: 20px;
+
+        .video_right {
+
+            .iframe_video_right {
+                width: 100%;
+                height: 25vh;
+                border-radius: 5px;
+            }
+        }
+
+        .video-detail_right {
+            font-family: "Roboto", "Arial", sans-serif;
+            margin-bottom: 10px;
+
+            .video_title_right {
+                font-size: 14px;
+                font-weight: 500;
+            }
+
+            .video_createdAt_right {
+                font-size: 10px;
+                font-weight: 400;
+                margin-top: 5px;
+            }
+
+            .video_author_right {
+                margin-top: 5px;
+                font-size: 12px;
+                font-weight: 400;
+            }
+
+            .video_description_right {
+                margin-top: 5px;
+                font-size: 10px;
+                font-weight: 400;
+            }
+        }
+    }
+}

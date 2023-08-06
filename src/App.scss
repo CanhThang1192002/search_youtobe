@@ -1,0 +1,194 @@
+.App {
+  .App-header {
+    width: 100%;
+    height: 9vh;
+    position: relative;
+
+    .avata {
+      transform: scale(0.19);
+      position: absolute;
+      top: -65px;
+      right: -30px;
+      cursor: pointer;
+    }
+
+    .BiVideoPlus {
+      float: right;
+      font-size: 25px;
+      margin-right: 30px;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+
+    .IoIosNotificationsOutline {
+      float: right;
+      font-size: 25px;
+      margin-right: 100px;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+
+    .search {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      input {
+        width: 450px;
+        height: 25px;
+        border-radius: 20px 0 0 20px;
+        border: 1px solid #ccc;
+        padding: 5px 20px;
+        margin: 10px 0;
+        outline: none;
+        font-size: 18px;
+        font-weight: 500;
+        color: rgb(15, 15, 15);
+      }
+
+      .delete_query {
+        position: absolute;
+        top: 13px;
+        right: 80px;
+        font-size: 23px;
+        font-weight: 300;
+        color: #696868;
+        cursor: pointer;
+      }
+
+      .AiOutlineSearch {
+        font-size: 25px;
+        height: 25px;
+        padding: 5px 20px;
+        position: relative;
+        top: 13px;
+        border-radius: 0px 20px 20px 0px;
+        border: 1px solid #ccc;
+        border-left: none;
+        cursor: pointer;
+        background-color: #eeeeee;
+      }
+    }
+
+    .GiHamburgerMenu {
+      font-size: 23px;
+      margin: 15px 0 0 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+input:focus {
+  outline: 1px solid #ecd3d3;
+  box-shadow: inset 0 0 1px 1px #ecd3d3;
+  border: 1px solid #a7a7a7;
+}
+
+.body {
+  display: flex;
+
+  .sidebar {
+    background-color: #FFF;
+    width: 17%;
+    height: 91vh;
+
+    #home {
+      margin-top: 10px;
+    }
+
+    .sidebar_item {
+      display: flex;
+      height: 50px;
+      align-items: center;
+      margin: 5px 3px;
+      border-radius: 10px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #ebeaea;
+      }
+
+      .icon {
+        font-size: 23px;
+        padding-left: 17px;
+      }
+
+      span {
+        font-size: 15px;
+        font-weight: 500;
+        color: #000;
+        margin-left: 25px;
+      }
+    }
+  }
+
+  .sidebar.collapsed {
+    width: 5%;
+
+    .sidebar_item {
+      span {
+        display: none;
+      }
+    }
+  }
+
+  .App-content {
+    padding: 0 80px 0 40px;
+    flex: 1;
+    height: 91vh;
+    cursor: pointer;
+    overflow-y: auto;
+
+    ::-webkit-scrollbar {
+      width: 8px;
+      background-color: #ffffff;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: rgba(255, 255, 255, 1);
+      border-radius: 5px;
+    }
+
+    .video-list {
+      margin-top: 15px;
+      display: flex;
+      height: 200px;
+
+      .iframe_video {
+        width: 350px;
+        height: 200px;
+        border-radius: 10px;
+      }
+    }
+
+    .video-detail {
+      margin-left: 25px;
+      padding-top: 5px;
+      font-family: "Roboto", "Arial", sans-serif;
+
+      .video_title {
+        font-size: 18px;
+        font-weight: 500;
+      }
+
+      .video_createdAt {
+        font-size: 13px;
+        font-weight: 400;
+        margin-top: 5px;
+      }
+
+      .video_author {
+        margin-top: 20px;
+        font-size: 15px;
+        font-weight: 400;
+      }
+
+      .video_description {
+        margin-top: 20px;
+        font-size: 13px;
+        font-weight: 400;
+      }
+    }
+  }
+}
